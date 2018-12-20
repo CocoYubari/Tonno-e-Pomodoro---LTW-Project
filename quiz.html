@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Tonno e Pomodoro - Quiz</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="assets/js/vendor/holder.min.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+    <!--NavIcon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--torna su -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+
+  <!-- script tornasu -->
+  <script type="text/javascript">
+    $(function() {
+        $(window).scroll(function() {
+            if($(this).scrollTop() != 0) {
+                            //se non siamo in cima alla pagina
+                $('#top').fadeIn(); //faccio apparire il box
+            } else {
+                            //altrimenti (il visitatore è in cima alla pagina scrollTop = 0)
+                $('#top').fadeOut();//Il box scompare
+            }
+        });//Allo scroll function
+
+        $('#top').click(function() {
+                    //Se clicco sul box torno su (scrollTop:0) con un timing di animazione.
+            $('body,html').animate({scrollTop:0},800);
+        });//Click
+    });//DOM
+  </script>
+
+    <!--Script per il funzionamento del quiz-->
+    <script src="quiz.js"></script>
+
+    
+   
+
+  </head>
+
+    <body style="background-color: #ffe6ab">
+    
+
+        <div id="logoimg">
+            <a href="index.html"><img id="logo" class="img-responsive" src="images/header.png" alt="Home"></a>
+        </div>
+                
+        <nav id="nav" class="navbar navbar-expand-md navbar-light bg-light">
+            <button class="navbar-toggler navbar-toggler-center" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      
+                <ul class="navbar-nav mx-auto w-100 justify-content-center">
+                    <li><a class="p-2 text-muted" href="index.html">Home</a></li>
+                    <li><a class="p-2 text-muted" href="aboutus.html">About us </a></li>
+                    <li><a class="p-2 text-muted" href="lista.html">Ricettario</a></li>
+                    <li><a class="p-2 text-muted" href="listaveget.html">Vegetariane</a></li>
+                    <li><a class="p-2 text-muted" href="listaveg.html">Vegane</a></li>
+                    <li><a class="p-2 text-muted" href="listasg.html">Senza glutine</a></li>
+                    <li><a class="p-2 text-muted" href="listasl.html">Senza lattosio</a></li>
+                </ul>
+            </div>
+        </nav>
+                
+
+        
+            <div class="container-fluid">
+                <center> 
+                <div class="main-column"> 
+                    <div class="column-content">
+                        <div class="container">
+                            <h2>Quiz </h2>
+                                <form>
+                                <p><b>1) Quale pasta viene preparata tradizionalmente con uova e guanciale?</b></p>
+                                <input type=radio value="a" name="1" onClick="Engine(1, this.value)">Pasta alla Carbonara<br> <!---->
+                                <input type=radio value="b" name="1" onClick="Engine(1, this.value)">Pasta al pesto<br>
+                                <input type=radio value="c" name="1" onClick="Engine(1, this.value)">Spaghetti all'Amatriciana<br>
+                                <input type=radio value="d" name="1" onClick="Engine(1, this.value)">Spaghetti allo scoglio<p>
+                                <br>
+                                <p><b>2) Quale metodo di cottura è il meno aggressivo nei confronti del cibo e delle sue proprietà?</b></p>
+                                <input type=radio value="a" name="2" onClick="Engine(2, this.value)">Alla griglia<br>
+                                <input type=radio value="b" name="2" onClick="Engine(2, this.value)">Al vapore<br>
+                                <input type=radio value="c" name="2" onClick="Engine(2, this.value)">Sotto vuoto<br> <!---->
+                                <input type=radio value="d" name="2" onClick="Engine(2, this.value)">Al forno<p>
+                                <br>
+                                <p><b>3) Qual è l'ingrediente principale delle meringhe?</b></p>
+                                <input type=radio value="a" name="3" onClick="Engine(3, this.value)">Latte<br>
+                                <input type=radio value="b" name="3" onClick="Engine(3, this.value)">Farina<br>
+                                <input type=radio value="c" name="3" onClick="Engine(3, this.value)">Albume<br> <!---->
+                                <input type=radio value="d" name="3" onClick="Engine(3, this.value)">Zucchero filato<p>
+                                <br>
+                                <p><b>4) Di quale ingrediente è povero il pane toscano?</b></p>
+                                <input type=radio value="a" name="4" onClick="Engine(4, this.value)">Acqua<br>
+                                <input type=radio value="b" name="4" onClick="Engine(4, this.value)">Lievito<br>
+                                <input type=radio value="c" name="4" onClick="Engine(4, this.value)">Farina di grano<br>
+                                <input type=radio value="d" name="4" onClick="Engine(4, this.value)">Sale<p> <!---->
+                                <br>               
+                                <p><b>5) Quanti minuti sono necessari (circa) per cuocere perfettamente un uovo in camicia?</b></p>         
+                                <input type=radio value="a" name="5" onClick="Engine(5, this.value)">1 min<br>
+                                <input type=radio value="b" name="5" onClick="Engine(5, this.value)">2 min<br> <!---->
+                                <input type=radio value="c" name="5" onClick="Engine(5, this.value)">5 min<br>
+                                <input type=radio value="d" name="5" onClick="Engine(5, this.value)">7 min<p>
+                                <br>
+                                <p><b>6) Che tipo di ortaggio è il cavolfiore?</b></p>
+                                <input type=radio value="a" name="6" onClick="Engine(6, this.value)">Ortaggio a fiore<br><!---->
+                                <input type=radio value="b" name="6" onClick="Engine(6, this.value)">Ortaggio a foglia<br>
+                                <input type=radio value="c" name="6" onClick="Engine(6, this.value)">Ortaggio a seme<br>
+                                <input type=radio value="d" name="6" onClick="Engine(6, this.value)">Ortaggio a bulbo<p>
+                                <br>
+                                <p><b>7) Quale di queste carni non deve avere un colore rosato perchè possa essere servita?</b></p>
+                                <input type=radio value="a" name="7" onClick="Engine(7, this.value)">Manzo<br>
+                                <input type=radio value="b" name="7" onClick="Engine(7, this.value)">Pecora<br>
+                                <input type=radio value="c" name="7" onClick="Engine(7, this.value)">Pollo<br><!---->
+                                <input type=radio value="d" name="7" onClick="Engine(7, this.value)">Maiale<p>
+                                <br>
+                                <p><b>8) Cosa dovresti usare, idealmente, quando si tratta di cuocere un uovo in padella?</b></p>
+                                <input type=radio value="a" name="8" onClick="Engine(8, this.value)">Margarina<br>
+                                <input type=radio value="b" name="8" onClick="Engine(8, this.value)">Olio<br>
+                                <input type=radio value="c" name="8" onClick="Engine(8, this.value)">Strutto<br>
+                                <input type=radio value="d" name="8" onClick="Engine(8, this.value)">Burro<p><!---->
+                                <br>
+                                <p><b>9) Quale tra questi utensili useresti per incorporare componenti montati (i.e. panna, albumi d'uovo) in altri composti?</b></p>
+                                <input type=radio value="a" name="9" onClick="Engine(9, this.value)">Leccateglie<br> <!---->
+                                <input type=radio value="b" name="9" onClick="Engine(9, this.value)">Fruste<br>
+                                <input type=radio value="c" name="9" onClick="Engine(9, this.value)">Forchetta<br>
+                                <input type=radio value="d" name="9" onClick="Engine(9, this.value)">Bacchette<p>
+                                <br>
+                                <p><b>10) Sedano, carota e cipolla tritati rappresentano la base di un soffritto molto utilizzato. In che rapporto sono comunemente queste tre parti?</b></p>
+                                <input type=radio value="a" name="10" onClick="Engine(10, this.value)">3/2/1<br>
+                                <input type=radio value="b" name="10" onClick="Engine(10, this.value)">1/1/1<br> <!---->
+                                <input type=radio value="c" name="10" onClick="Engine(10, this.value)">1/2/1<br>
+                                <input type=radio value="d" name="10" onClick="Engine(10, this.value)">1/1/2<p>
+                                <br>
+                                
+                                <input type=button onClick="ShowResult()" value="Test finito, scopri il risultato" class="button">
+                                
+                                
+                                <div id='risultato'></div>
+
+                                <input type=button onClick="window.location.href='prequiz.html'" value="Indietro" class="button">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </center>
+            </div>
+        
+
+
+
+    
+
+            <footer>
+                    <div class="container-fluid-footer">
+                      <h6>Coded by: Costanza Oliveri e Sara Marianecci</h6>
+                    </div>
+                  </footer>
+                  <div id="top"><img src="images/icon-tornasu.png"></div>
+
+            
+            
+            
+
+    </body>
+</html>

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Tonno e Pomodoro - Barchette di zucchine</title>
+   
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="assets/js/vendor/holder.min.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+    <!--NavIcon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--torna su -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+
+  <!-- script tornasu -->
+  <script type="text/javascript">
+    $(function() {
+        $(window).scroll(function() {
+            if($(this).scrollTop() != 0) {
+                            //se non siamo in cima alla pagina
+                $('#top').fadeIn(); //faccio apparire il box
+            } else {
+                            //altrimenti (il visitatore è in cima alla pagina scrollTop = 0)
+                $('#top').fadeOut();//Il box scompare
+            }
+        });//Allo scroll function
+
+        $('#top').click(function() {
+                    //Se clicco sul box torno su (scrollTop:0) con un timing di animazione.
+            $('body,html').animate({scrollTop:0},800);
+        });//Click
+    });//DOM
+  </script>
+
+  </head>
+
+  <body style="background-color: #ffe6ab">
+
+      <div id="logoimg">
+        <a href="index.html"><img id="logo" class="img-responsive" src="images/header.png" alt="Home"></a>
+    </div>
+            <!--menu-->
+            <nav id="nav" class="navbar navbar-expand-md navbar-light bg-light">
+              <button class="navbar-toggler navbar-toggler-center" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+  
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+  
+                <ul class="navbar-nav mx-auto w-100 justify-content-center">
+                    <li><a class="p-2 text-muted" href="index.html">Home</a></li>
+                    <li><a class="p-2 text-muted" href="aboutus.html">About us </a></li>
+                    <li><a class="p-2 text-muted" href="lista.html">Ricettario</a></li>
+                    <li><a class="p-2 text-muted" href="listaveget.html">Vegetariane</a></li>
+                    <li><a class="p-2 text-muted" href="listaveg.html">Vegane</a></li>
+                    <li><a class="p-2 text-muted" href="listasg.html">Senza glutine</a></li>
+                    <li><a class="p-2 text-muted" href="listasl.html">Senza lattosio</a></li>
+                </ul>
+              </div>
+            </nav>
+            
+
+            <div class="container-fluid">
+                
+                <div class="main-column"> 
+                    <div class="column-content">
+                        <CENTER>
+                        <h2>Barchette di Zucchine</h2>
+                        <br>
+                        <br>
+                        <img src="images/zucchine.jpg" width="600" alt="Card image cap"> 
+                        <br>
+                             <!--mi piace e condivisione facebook (JAVASCRIPT)-->
+                             <div id="fb-root"></div>
+                             <script>(function(d, s, id) {
+                               var js, fjs = d.getElementsByTagName(s)[0];
+                               if (d.getElementById(id)) return;
+                               js = d.createElement(s); js.id = id;
+                               js.src = 'https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v3.2';
+                               fjs.parentNode.insertBefore(js, fjs);
+                             }(document, 'script', 'facebook-jssdk'));</script>
+                             <div class="fb-like" data-href="https://www.facebook.com/TonnoePomodoro/" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                        <br>
+                        <br>
+                        <h2>Ingredienti (4 Persone)</h2>
+                        • 4 zucchine medie<br>
+                        • 120g di tonno in scatola<br>
+                        • 1 uovo<br>
+                        • Parmigiano Reggiano q.b. <br>
+                        • pan grattato q.b. <br>
+                        • sale e pepe q.b. <br>
+                        <br>
+
+                        <h2>Preparazione</h2>
+                        - 1 ora<br>
+                        <br>
+
+                        <h2>Procedimento:</h2>
+                        <p><b>1)</b> Tagliare ogni zucchina in tre parti e successivamente dividerle a metà nel verso della lunghezza</p>
+                        <p><b>2)</b> Sbollentarle in acqua bollente e salata per circa 10-15 min. (Devono essere morbide, ma non troppo molli)</p>
+                        <p><b>3)</b> Raschiare con un cucchiaio la parte bianca della zucchina e raccoglierla in una ciotola</p>
+                        <p><b>4)</b> Schiacciare bene con la forchetta e unire il tonno, il parmigiano, l'uovo, il sale e il pepe. Se l'impasto dovesse risultare troppo molle, aggiungere il pan grattato.</p>
+                        <p><b>5)</b> Riempire la base delle zucchine con il composto e spolverare con il Parmigiano</p>
+                        <p><b>6)</b> Cuocere in forno a 180°C per circa 20 minuti o fino a quando non si è formata la crosticina in superficie</p>
+                        
+
+                    </div>
+                    
+
+                  </CENTER>
+
+
+
+                </div>
+            </div>
+    
+      
+    </div>
+
+    <footer>
+        <div class="container-fluid-footer">
+          <h6>Coded by: Costanza Oliveri e Sara Marianecci</h6>
+        </div>
+      </footer>
+      <div id="top"><img src="images/icon-tornasu.png"></div>
+
+    </body>
+</html>
